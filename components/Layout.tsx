@@ -1,9 +1,12 @@
-import Header from './Header';
-import { Grid } from '@material-ui/core';
+import { Grid, GridSpacing, useTheme } from "@material-ui/core";
+
+import Header from "./Header";
 
 const Layout: React.FC = ({ children }) => {
+  const theme = useTheme();
+
   return (
-    <Grid container justify="center" alignItems="center">
+    <Grid container justify="center" alignItems="center" spacing={2}>
       <Grid item xs={12}>
         <header>
           <Header />

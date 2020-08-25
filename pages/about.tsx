@@ -1,5 +1,5 @@
-import React from 'react';
-import { NextSeo } from 'next-seo';
+import { NextSeo } from "next-seo";
+import React from "react";
 
 export default function about() {
   <NextSeo

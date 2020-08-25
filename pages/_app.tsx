@@ -1,11 +1,15 @@
-import { useEffect } from 'react';
-import { AppProps } from 'next/app';
-import PropTypes from 'prop-types';
-import { ThemeProvider } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { DefaultSeo } from 'next-seo';
+import "ag-grid-community/dist/styles/ag-grid.css";
+import "ag-grid-community/dist/styles/ag-theme-alpine-dark.css";
 
-import theme from '../lib/theme';
+import { DefaultSeo } from "next-seo";
+import { AppProps } from "next/app";
+import PropTypes from "prop-types";
+import { useEffect } from "react";
+
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { ThemeProvider } from "@material-ui/core/styles";
+
+import theme from "../contants/theme";
 
 const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
